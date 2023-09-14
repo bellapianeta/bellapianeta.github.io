@@ -683,13 +683,14 @@ body.archive-view .sidebar-container {
 }
 body.feed-view .blog-pager {
     display: flex !important;
+    color: var(--colorThemes) !important;
 }
 body.feed-view .showpageOf {
     display: none !important;
 }
 body.feed-view .blog-pager span {
     margin: 4px !important;
-    outline: 1px solid var(--colorBlack) !important;
+    outline: 1px solid var(--colorThemes) !important;
 }
 body.feed-view .showpagePoint,
 body.feed-view .showpageNum,
