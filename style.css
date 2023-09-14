@@ -663,6 +663,29 @@ body.archive-view .sidebar-container {
     font-size: 24px;
     margin: 0 -12px 0 12px;
 }
+body.feed-view .blog-pager{
+    display:flex !important;
+    
+}
+body.feed-view .showpageOf{
+    display:none !important;
+}
+
+body.feed-view .blog-pager span{
+    margin:4px !important;
+    outline: 1px solid var(--colorBlack);
+}
+body.feed-view .showpagePoint,body.feed-view .showpageNum{
+    text-align: center !important;
+    min-width: 36px !important;
+    
+}
+body.feed-view .showpagePoint,body.feed-view .showpageNum a{
+    font-family: 'Noto Sans JP','Material Icons' !important;
+    font-size:16px !important;
+    font-weight: bold !important;
+    line-height:36px !important;
+}
 /* ----------------------------------------          1619          ---------------------------------------- */
 @media screen and (max-width: 1619px) {
     .page_body{
