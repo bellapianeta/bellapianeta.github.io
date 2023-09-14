@@ -230,6 +230,16 @@ html[dir=ltr] .search form {
 .flat-button {
     text-transform: uppercase !important;
 }
+body.item-view .Blog .post-body::first-letter {
+    float: none;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: inherit;
+}
+body.item-view .Blog .post-body::first-line {
+    color: inherit;
+}
 /* ----------------------------------------          sidebar          ---------------------------------------- */
 .sidebar-container {
     position: absolute;
@@ -663,31 +673,31 @@ body.archive-view .sidebar-container {
     font-size: 24px;
     margin: 0 -12px 0 12px;
 }
-body.feed-view .blog-pager{
-    display:flex !important;
-    
+body.feed-view .blog-pager {
+    display: flex !important;
 }
-body.feed-view .showpageOf{
-    display:none !important;
+body.feed-view .showpageOf {
+    display: none !important;
 }
-
-body.feed-view .blog-pager span{
-    margin:4px !important;
+body.feed-view .blog-pager span {
+    margin: 4px !important;
     outline: 1px solid var(--colorBlack);
 }
-body.feed-view .showpagePoint,body.feed-view .showpageNum{
+body.feed-view .showpagePoint,
+body.feed-view .showpageNum {
     text-align: center !important;
     min-width: 36px !important;
 }
-body.feed-view .showpagePoint,body.feed-view .showpageNum a{
-    font-family: 'Noto Sans JP','Material Icons' !important;
-    font-size:16px !important;
+body.feed-view .showpagePoint,
+body.feed-view .showpageNum a {
+    font-family: 'Noto Sans JP', 'Material Icons' !important;
+    font-size: 16px !important;
     font-weight: bold !important;
-    line-height:36px !important;
+    line-height: 36px !important;
 }
 /* ----------------------------------------          1619          ---------------------------------------- */
 @media screen and (max-width: 1619px) {
-    .page_body{
+    .page_body {
         max-width: none;
     }
     .sidebar-container {
