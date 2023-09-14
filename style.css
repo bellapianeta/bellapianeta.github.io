@@ -678,7 +678,6 @@ body.feed-view .blog-pager span{
 body.feed-view .showpagePoint,body.feed-view .showpageNum{
     text-align: center !important;
     min-width: 36px !important;
-    
 }
 body.feed-view .showpagePoint,body.feed-view .showpageNum a{
     font-family: 'Noto Sans JP','Material Icons' !important;
