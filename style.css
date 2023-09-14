@@ -288,10 +288,6 @@ html[dir=ltr] .search form {
     white-space: pre-wrap;
     content: "プロフィールにアクセス";
     pointer-events: auto;
-    /* color: #FFFFFF;
-    background: var(--colorThemes);
-    padding:8px;
-    border-radius:18px; */
 }
 .sidebar-container .widget.Profile li {
     margin: 0;
@@ -697,11 +693,11 @@ body.archive-view .sidebar-container {
     .centered-top-placeholder .Header .replaced {
         height: var(--headerHeightM);
         width: 100vw;
-        pointer-events: none;
     }
     .centered-top-container:not(.sticky) .Header .replaced h1,
     .centered-top-placeholder .Header .replaced h1 {
         padding: 0 0 0 4vw;
+        pointer-events: auto;
     }
     .centered-top-container:not(.sticky) .widget.Header .header-widget p:first-of-type,
     .centered-top-placeholder .widget.Header .header-widget p:first-of-type {
