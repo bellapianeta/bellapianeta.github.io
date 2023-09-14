@@ -669,6 +669,9 @@ body.archive-view .sidebar-container {
 }
 /* ----------------------------------------          1619          ---------------------------------------- */
 @media screen and (max-width: 1619px) {
+    .page_body{
+        max-width: none;
+    }
     .sidebar-container {
         position: fixed;
         left: auto;
