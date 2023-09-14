@@ -319,6 +319,9 @@ body.sidebar-visible .sidebar-container {
     background: #FFFFFF;
 }
 /* ----------------------------------------          item-view          ---------------------------------------- */
+body.item-view {
+    background: var(--colorThemes);
+}
 body.item-view .header-image-wrapper {
     display: none !important;
 }
@@ -372,15 +375,17 @@ body.item-view .main_content_container {
 body.item-view .Blog .post-title-container {
     background: var(--colorThemes);
     box-sizing: border-box;
-    margin: -72px 0 0;
-    padding: calc(8dvh + 72px) 0 8dvh;
+    padding: calc(8dvh + 0px) 0 8dvh;
     width: 100vw;
+    height: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 body.item-view .Blog .post-title,
 body.item-view .Blog .post-title a {
-    font-size: 4dvh;
+    font-size: 4.8dvh;
+    margin: -72px 0 0;
     width: calc(100vw - 96px);
 }
 body.item-view .Blog .post-header-container {
@@ -389,7 +394,7 @@ body.item-view .Blog .post-header-container {
 }
 body.item-view .Blog .post-header {
     height: 24px;
-    margin: -48px 0 0;
+    margin: -60px 0 0;
     padding: 0 0 0 48px;
 }
 body.item-view .post-header-container .byline,
@@ -545,7 +550,7 @@ body.label-view .post-filter-description {
 body.search-view:has(.search-focused) .post-filter-description,
 body.label-view .post-filter-description,
 body.archive-view .post-filter-description {
-    margin: -60px 0 0;
+    margin: -96px 0 0;
 }
 body.search-view:has(.search-focused) .post-filter-description:before {
     font-size: 1.2rem;
@@ -565,12 +570,15 @@ body.label-view .post-filter-description:after {
     content: "が付いた投稿を表示しています";
 }
 body.search-view:has(.search-focused) .post-filter-description .search-query,
-body.label-view .post-filter-description .search-label,
-body.archive-view .post-filter-description {
+body.label-view .post-filter-description .search-label {
     font-size: 3rem;
     line-height: 4rem;
     font-feature-settings: "palt";
     letter-spacing: .5rem;
+}
+body.archive-view .post-filter-description {
+    font-size: 3rem;
+    line-height: 4rem;
 }
 body.search-view:has(.search-focused) .search-query:before,
 body.label-view .search-label:before {
@@ -587,7 +595,7 @@ body.label-view .post-filter-message div:last-of-type,
 body.archive-view .post-filter-message div:last-of-type {
     position: absolute;
     left: 48px;
-    bottom: 24px;
+    bottom: 48px;
 }
 body.search-view:has(.search-focused) .post-filter-message a,
 body.label-view .post-filter-message a,
@@ -642,17 +650,17 @@ body.archive-view .sidebar-container {
     margin: 4px !important;
 }
 .blog-pager .home-link {
-    order: 2;
+    order: 1;
     width: 96px;
     font-size: 0;
 }
 .blog-pager .home-link:before {
     font-family: 'Material Icons';
     font-size: 24px;
-    content: "home";
+    content: "\e88a";
 }
 .blog-pager .blog-pager-newer-link {
-    order: 1;
+    order: 2;
     width: 192px;
 }
 .blog-pager .blog-pager-older-link {
@@ -661,14 +669,14 @@ body.archive-view .sidebar-container {
 }
 .blog-pager .blog-pager-newer-link:before {
     font-family: 'Material Icons';
-    content: "arrow_back";
+    content: "\e5c4";
     font-weight: normal;
     font-size: 24px;
     margin: 0 12px 0 -12px;
 }
 .blog-pager .blog-pager-older-link:after {
     font-family: 'Material Icons';
-    content: "arrow_forward";
+    content: "\e5c8";
     font-weight: normal;
     font-size: 24px;
     margin: 0 -12px 0 12px;
@@ -763,6 +771,15 @@ body.feed-view .showpageNum a {
     .main_content_container {
         display: block;
     }
+    body.item-view .Blog .post-title,
+    body.item-view .Blog .post-title a {
+        margin: -48px 0 0;
+        width: calc(100vw - 48px);
+    }
+    body.item-view .Blog .post-header {
+        margin: -36px 0 0;
+        padding: 0 0 0 24px;
+    }
     body.item-view .Blog .post-body {
         padding: 12px 0 0;
         max-width: calc(100vw - 48px);
@@ -809,17 +826,20 @@ body.feed-view .showpageNum a {
         font-size: 1rem;
     }
     body.search-view:has(.search-focused) .post-filter-description .search-query,
-    body.label-view .post-filter-description .search-label,
-    body.archive-view .post-filter-description {
+    body.label-view .post-filter-description .search-label {
         font-size: 2rem;
         line-height: 3rem;
         letter-spacing: .25rem;
+    }
+    body.archive-view .post-filter-description {
+        font-size: 2rem;
+        line-height: 3rem;
     }
     body.search-view:has(.search-focused) .post-filter-message div:last-of-type,
     body.label-view .post-filter-message div:last-of-type,
     body.archive-view .post-filter-message div:last-of-type {
         left: 24px;
-        bottom: 12px;
+        bottom: 24px;
     }
     body.search-view:has(.search-focused) .post-filter-message a,
     body.label-view .post-filter-message a,
