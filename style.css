@@ -43,7 +43,7 @@
     right: 0;
     width: 100vw;
     height: var(--headerHeightD);
-    background-image: url(https://drive.google.com/uc?id=18H5AuQIp7-ePg481Ixtz3vT-Jb9argu8);
+    background-image: url('https://bellapianeta.github.io/bg.png');
     background-size: auto var(--headerHeightD);
     z-index: -1;
 }
