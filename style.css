@@ -414,38 +414,38 @@ body.item-view .sidebar-container {
     top: calc(20dvh + 120px);
 }
 /* ----------------------------------------          filter          ---------------------------------------- */
-body.search-view,
+body.search-view:has(.search-focused),
 body.label-view,
 body.archive-view {
     background: var(--colorThemes);
 }
-body.search-view .main_header_elements,
-body.search-view label_header_elements,
+body.search-view:has(.search-focused) .main_header_elements,
+body.search-view:has(.search-focused) label_header_elements,
 body.archive-view label_header_elements {
     height: 72px;
 }
-body.search-view .centered-top.search-focused .blog-name,
+body.search-view:has(.search-focused) .centered-top.search-focused .blog-name,
 body.label-view .centered-top.search-focused .blog-name,
 body.archive-view .centered-top.search-focused .blog-name {
     display: block;
 }
-body.search-view .header-image-wrapper,
+body.search-view:has(.search-focused) .header-image-wrapper,
 body.label-view .header-image-wrapper,
 body.archive-view .header-image-wrapper {
     display: none !important;
 }
-body.search-view .centered-top-container:not(.sticky) .centered-top .svg-icon-24,
+body.search-view:has(.search-focused) .centered-top-container:not(.sticky) .centered-top .svg-icon-24,
 body.label-view .centered-top-container:not(.sticky) .centered-top .svg-icon-24,
 body.archive-view .centered-top-container:not(.sticky) .centered-top .svg-icon-24 {
     fill: #FFFFFF;
 }
-body.search-view .centered-top-container,
+body.search-view:has(.search-focused) .centered-top-container,
 body.label-view .centered-top-container,
 body.archive-view .centered-top-container {
     z-index: 1;
 }
-body.search-view .centered-top-container:not(.sticky) .Header .replaced,
-body.search-view .centered-top-placeholder .Header .replaced,
+body.search-view:has(.search-focused) .centered-top-container:not(.sticky) .Header .replaced,
+body.search-view:has(.search-focused) .centered-top-placeholder .Header .replaced,
 body.label-view .centered-top-container:not(.sticky) .Header .replaced,
 body.label-view .centered-top-placeholder .Header .replaced,
 body.archive-view .centered-top-container:not(.sticky) .Header .replaced,
@@ -455,63 +455,63 @@ body.archive-view .centered-top-placeholder .Header .replaced {
     display: flex !important;
     align-items: center !important;
 }
-body.search-view .centered-top-container .Header .replaced h1,
-body.search-view .centered-top-placeholder .Header .replaced h1,
+body.search-view:has(.search-focused) .centered-top-container .Header .replaced h1,
+body.search-view:has(.search-focused) .centered-top-placeholder .Header .replaced h1,
 body.label-view .centered-top-container .Header .replaced h1,
 body.label-view .centered-top-placeholder .Header .replaced h1,
 body.archive-view .centered-top-container .Header .replaced h1,
 body.archive-view .centered-top-placeholder .Header .replaced h1 {
     padding: 0 !important;
 }
-body.search-view .blog-name .widget.Header p,
+body.search-view:has(.search-focused) .blog-name .widget.Header p,
 body.label-view .blog-name .widget.Header p,
 body.archive-view .blog-name .widget.Header p {
     display: block !important;
     line-height: 1.5rem !important;
     padding: 0 0 0 1rem !important;
 }
-body.search-view .blog-name .widget.Header p:first-of-type,
+body.search-view:has(.search-focused) .blog-name .widget.Header p:first-of-type,
 body.label-view .blog-name .widget.Header p:first-of-type,
 body.archive-view .blog-name .widget.Header p:first-of-type {
     font-size: 1rem !important;
     font-weight: normal !important;
 }
-body.search-view .blog-name .widget.Header p:last-of-type,
+body.search-view:has(.search-focused) .blog-name .widget.Header p:last-of-type,
 body.label-view .blog-name .widget.Header p:last-of-type,
 body.archive-view .blog-name .widget.Header p:last-of-type {
     font-size: 1.2rem !important;
     font-weight: bold !important;
 }
-body.search-view .centered-top-container .Header .replaced h1:after,
-body.search-view .centered-top-placeholder .Header .replaced h1:after,
+body.search-view:has(.search-focused) .centered-top-container .Header .replaced h1:after,
+body.search-view:has(.search-focused) .centered-top-placeholder .Header .replaced h1:after,
 body.label-view .centered-top-container .Header .replaced h1:after,
 body.label-view .centered-top-placeholder .Header .replaced h1:after,
 body.archive-view .centered-top-container .Header .replaced h1:after,
 body.archive-view .centered-top-placeholder .Header .replaced h1:after {
     content: none !important;
 }
-body.search-view .centered-top-container:not(.sticky) .search.focused .section,
+body.search-view:has(.search-focused) .centered-top-container:not(.sticky) .search.focused .section,
 body.label-view .centered-top-container:not(.sticky) .search.focused .section,
 body.archive-view .centered-top-container:not(.sticky) .search.focused .section {
     background: none;
     backdrop-filter: saturate(200%) brightness(50%) blur(4px);
 }
-body.search-view .centered-top-container:not(.sticky) .search input,
+body.search-view:has(.search-focused) .centered-top-container:not(.sticky) .search input,
 body.label-view .centered-top-container:not(.sticky) .search input,
 body.archive-view .centered-top-container:not(.sticky) .search input {
     color: #FFFFFF;
 }
-body.search-view .centered-top-container:not(.sticky) .search input::placeholder,
+body.search-view:has(.search-focused) .centered-top-container:not(.sticky) .search input::placeholder,
 body.label-view .centered-top-container:not(.sticky) .search input::placeholder,
 body.archive-view .centered-top-container:not(.sticky) .search input::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
-body.search-view .main_content_container,
+body.search-view:has(.search-focused) .main_content_container,
 body.label-view .main_content_container,
 body.archive-view .main_content_container {
     padding: 0 !important;
 }
-body.search-view .post-filter-message,
+body.search-view:has(.search-focused) .post-filter-message,
 body.label-view .post-filter-message,
 body.archive-view .post-filter-message {
     margin: 0;
@@ -522,7 +522,7 @@ body.archive-view .post-filter-message {
     justify-content: center;
     align-items: center;
 }
-body.search-view .post-filter-description,
+body.search-view:has(.search-focused) .post-filter-description,
 body.label-view .post-filter-description,
 body.archive-view .post-filter-description {
     margin: 0;
@@ -530,22 +530,22 @@ body.archive-view .post-filter-description {
     flex: 0 0 auto;
     width: calc(100vw - 96px);
 }
-body.search-view .post-filter-description,
+body.search-view:has(.search-focused) .post-filter-description,
 body.label-view .post-filter-description {
     font-size: 0;
     height: fit-content;
     white-space: pre;
 }
-body.search-view .post-filter-description,
+body.search-view:has(.search-focused) .post-filter-description,
 body.label-view .post-filter-description,
 body.archive-view .post-filter-description {
     margin: -60px 0 0;
 }
-body.search-view .post-filter-description:before {
+body.search-view:has(.search-focused) .post-filter-description:before {
     font-size: 1.2rem;
     content: "検索キーワード";
 }
-body.search-view .post-filter-description:after {
+body.search-view:has(.search-focused) .post-filter-description:after {
     font-size: 1.2rem;
     content: "に一致する投稿を表示しています";
 }
@@ -558,7 +558,7 @@ body.label-view .post-filter-description:after {
     font-size: 1.2rem;
     content: "が付いた投稿を表示しています";
 }
-body.search-view .post-filter-description .search-query,
+body.search-view:has(.search-focused) .post-filter-description .search-query,
 body.label-view .post-filter-description .search-label,
 body.archive-view .post-filter-description {
     font-size: 3rem;
@@ -566,24 +566,24 @@ body.archive-view .post-filter-description {
     font-feature-settings: "palt";
     letter-spacing: .5rem;
 }
-body.search-view .search-query:before,
+body.search-view:has(.search-focused) .search-query:before,
 body.label-view .search-label:before {
     white-space: pre;
     content: "「";
 }
-body.search-view .search-query:after,
+body.search-view:has(.search-focused) .search-query:after,
 body.label-view .search-label:after {
     white-space: pre;
     content: "」";
 }
-body.search-view .post-filter-message div:last-of-type,
+body.search-view:has(.search-focused) .post-filter-message div:last-of-type,
 body.label-view .post-filter-message div:last-of-type,
 body.archive-view .post-filter-message div:last-of-type {
     position: absolute;
     left: 48px;
     bottom: 24px;
 }
-body.search-view .post-filter-message a,
+body.search-view:has(.search-focused) .post-filter-message a,
 body.label-view .post-filter-message a,
 body.archive-view .post-filter-message a {
     color: var(--colorThemes);
@@ -592,17 +592,17 @@ body.archive-view .post-filter-message a {
     vertical-align: middle;
     background: #FFFFFF;
 }
-body.search-view .Blog,
+body.search-view:has(.search-focused) .Blog,
 body.label-view .Blog,
 body.archive-view .Blog {
     align-items: center;
 }
-body.search-view .blog-posts,
+body.search-view:has(.search-focused) .blog-posts,
 body.label-view .blog-posts,
 body.archive-view .blog-posts {
     padding: 72px 0 0;
 }
-body.search-view .sidebar-container,
+body.search-view:has(.search-focused) .sidebar-container,
 body.label-view .sidebar-container,
 body.archive-view .sidebar-container {
     top: calc(240px + 108px);
@@ -674,7 +674,7 @@ body.archive-view .sidebar-container {
         left: auto;
     }
     body.item-view .sidebar-container,
-    body.search-view .sidebar-container,
+    body.search-view:has(.search-focused) .sidebar-container,
     body.label-view .sidebar-container,
     body.archive-view .sidebar-container {
         top: 0;
@@ -750,25 +750,25 @@ body.archive-view .sidebar-container {
     .blog-pager .blog-pager-older-link:after {
         margin: 0;
     }
-    body.search-view .post-filter-message,
+    body.search-view:has(.search-focused) .post-filter-message,
     body.label-view .post-filter-message,
     body.archive-view .post-filter-message {
         height: var(--headerHeightM);
     }
-    body.search-view .post-filter-description,
+    body.search-view:has(.search-focused) .post-filter-description,
     body.label-view .post-filter-description,
     body.archive-view .post-filter-description {
         width: calc(100vw - 48px);
     }
-    body.search-view .post-filter-description,
+    body.search-view:has(.search-focused) .post-filter-description,
     body.label-view .post-filter-description,
     body.archive-view .post-filter-description {
         margin: -48px 0 0;
     }
-    body.search-view .post-filter-description:before {
+    body.search-view:has(.search-focused) .post-filter-description:before {
         font-size: 1rem;
     }
-    body.search-view .post-filter-description:after {
+    body.search-view:has(.search-focused) .post-filter-description:after {
         font-size: 1rem;
     }
     body.label-view .post-filter-description:before {
@@ -777,20 +777,20 @@ body.archive-view .sidebar-container {
     body.label-view .post-filter-description:after {
         font-size: 1rem;
     }
-    body.search-view .post-filter-description .search-query,
+    body.search-view:has(.search-focused) .post-filter-description .search-query,
     body.label-view .post-filter-description .search-label,
     body.archive-view .post-filter-description {
         font-size: 2rem;
         line-height: 3rem;
         letter-spacing: .25rem;
     }
-    body.search-view .post-filter-message div:last-of-type,
+    body.search-view:has(.search-focused) .post-filter-message div:last-of-type,
     body.label-view .post-filter-message div:last-of-type,
     body.archive-view .post-filter-message div:last-of-type {
         left: 24px;
         bottom: 12px;
     }
-    body.search-view .post-filter-message a,
+    body.search-view:has(.search-focused) .post-filter-message a,
     body.label-view .post-filter-message a,
     body.archive-view .post-filter-message a {
         line-height: 32px;
@@ -799,7 +799,7 @@ body.archive-view .sidebar-container {
         vertical-align: middle;
         background: #FFFFFF;
     }
-    body.search-view .blog-posts,
+    body.search-view:has(.search-focused) .blog-posts,
     body.label-view .blog-posts,
     body.archive-view .blog-posts {
         padding: 48px 0 0;
