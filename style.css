@@ -375,7 +375,7 @@ body.item-view .main_content_container {
 body.item-view .Blog .post-title-container {
     background: var(--colorThemes);
     box-sizing: border-box;
-    padding: calc(8dvh + 0px) 0 8dvh;
+    padding: 96px 0;
     width: 100vw;
     height: auto;
     display: flex;
@@ -384,7 +384,7 @@ body.item-view .Blog .post-title-container {
 }
 body.item-view .Blog .post-title,
 body.item-view .Blog .post-title a {
-    font-size: 4.8dvh;
+    font-size: 3.6rem;
     margin: -72px 0 0;
     width: calc(100vw - 96px);
 }
@@ -771,8 +771,12 @@ body.feed-view .showpageNum a {
     .main_content_container {
         display: block;
     }
+    body.item-view .Blog .post-title-container {
+        padding: 12dvh 0;
+    }
     body.item-view .Blog .post-title,
     body.item-view .Blog .post-title a {
+        font-size: 4.8dvh;
         margin: -48px 0 0;
         width: calc(100vw - 48px);
     }
