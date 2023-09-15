@@ -887,3 +887,215 @@ body.archive-view .blog-pager {
         padding: 48px 0 0;
     }
 }
+/* ----------------------------------------          968land          ---------------------------------------- */
+@media screen and (max-width: 968px) and (orientation: landscape) {
+    .sticky {
+        display: none;
+    }
+    .all-container {
+        height: 100dvh;
+        overflow: auto;
+        scroll-snap-type: y mandatory;
+    }
+    .centered-top-container {
+        position: relative;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        height: 100dvh;
+    }
+    .centered-top-container:after {
+        content: "SCROLL\A\e5db";
+        white-space: pre;
+        color: #FFFFFF;
+        font-family: 'Noto Sans JP', 'Material Icons';
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        position: absolute;
+        width: 100vw;
+        bottom: 0;
+        text-align: center;
+        text-shadow: #000000 0 0 12px;
+    }
+    .main_content_container {
+        position: relative;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        height: 100dvh;
+        margin: 0;
+        padding: 0;
+    }
+    .header-image-wrapper {
+        height: 100dvh;
+        background-size: auto 100dvh;
+        background-position: 75% top;
+    }
+    .centered-top-container:not(.sticky) .Header .replaced,
+    .centered-top-placeholder .Header .replaced {
+        height: 100dvh;
+    }
+    .centered-top-container:not(.sticky) .widget.Header .header-widget p:first-of-type,
+    .centered-top-placeholder .widget.Header .header-widget p:first-of-type {
+        font-size: 4vw;
+    }
+    .centered-top-container:not(.sticky) .widget.Header .header-widget p:last-of-type,
+    .centered-top-placeholder .widget.Header .header-widget p:last-of-type {
+        font-size: 8vw;
+    }
+    .centered-top-container:not(.sticky) .Header .replaced h1:after,
+    .centered-top-placeholder .Header .replaced h1:after {
+        font-size: 2vw;
+    }
+    .FeaturedPost h3,
+    body.feed-view .blog-posts,
+    body.feed-view .feed-message {
+        margin: 0;
+    }
+    .blog-posts {
+        height: 100dvh;
+        overflow: auto;
+        scroll-snap-type: y mandatory;
+    }
+    .blog-pager {
+        width: 100vw;
+        height: 100dvh;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
+    .post-outer-container {
+        width: 100vw;
+        height: 100dvh;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
+    .post-outer-container * {
+        margin: 0;
+        padding: 0;
+    }
+    .post-outer .snippet-thumbnail-img {
+        background-size: 100vw !important;
+    }
+    .post-outer .snippet-thumbnail {
+        position: relative;
+        width: 100vw;
+        height: 100dvh;
+        overflow: hidden;
+    }
+    .post-content {
+        position: absolute;
+        top: 3vw;
+        left: 3vw;
+        width: 94vw;
+        max-width: none;
+        height: calc(100dvh - 6vw);
+        display: grid;
+        grid-template-columns: calc(94vw - 8rem) auto;
+        grid-template-rows: 4.8rem 2.4rem 1fr 6rem;
+    }
+    .post-title-container {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .post-title-container a {
+        font-size: 3.6rem;
+        color: #FFFFFF;
+        text-shadow: #000000 0 0 24px;
+    }
+    .post-header-container {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .post-header-container .byline a {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        text-shadow: #000000 0 0 24px;
+    }
+    .post-body {
+        grid-column: 1;
+        grid-row: 4;
+        padding: .5rem;
+        backdrop-filter: blur(12px) brightness(75%);
+        border-radius: 4px;
+    }
+    .post-body .post-snippet .snippet-item {
+        white-space: normal;
+        line-height: 1.6rem;
+        color: #FFFFFF;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+    }
+    .post-body .snippet-fade {
+        display: none;
+    }
+    .post-bottom {
+        grid-column: 2;
+        grid-row: 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+    }
+    .post-bottom .byline a {
+        color: #FFFFFF;
+        line-height: 1.6rem;
+        padding: .5rem 1rem;
+        backdrop-filter: blur(12px) brightness(75%);
+        border-radius: 4px;
+    }
+    body.feed-view .post-outer-container {
+        margin: 0;
+    }
+    #footer {
+        margin: 0;
+        padding: 0;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        height: 100dvh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    #footer * {
+        margin: 0;
+        padding: 0;
+    }
+    #footer .Attribution {
+        height: fit-content;
+        padding: 32px;
+    }
+}
+@media screen and (max-width: 968px) and (min-aspect-ratio: 3/5) and (orientation: portrait) {
+    .main_content_container {
+        margin: var(--headerHeightT) auto 0;
+    }
+    .page {
+        padding: 48px 0 0;
+    }
+    .header-image-wrapper {
+        height: var(--headerHeightT);
+        background-size: auto var(--headerHeightT);
+        background-position: 75% top;
+    }
+    .centered-top-container:not(.sticky) .Header .replaced h1,
+    .centered-top-placeholder .Header .replaced h1 {
+        padding: 0 0 0 4vw;
+    }
+    .centered-top-container:not(.sticky) .Header .replaced,
+    .centered-top-placeholder .Header .replaced {
+        height: var(--headerHeightT);
+    }
+    .centered-top-container:not(.sticky) .widget.Header .header-widget p:first-of-type,
+    .centered-top-placeholder .widget.Header .header-widget p:first-of-type {
+        font-size: 4vw;
+    }
+    .centered-top-container:not(.sticky) .widget.Header .header-widget p:last-of-type,
+    .centered-top-placeholder .widget.Header .header-widget p:last-of-type {
+        font-size: 8vw;
+    }
+    .centered-top-container:not(.sticky) .Header .replaced h1:after,
+    .centered-top-placeholder .Header .replaced h1:after {
+        font-size: 2vw;
+    }
+}
