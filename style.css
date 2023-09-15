@@ -32,6 +32,9 @@
     text-transform: none !important;
     font-style: normal !important;
 }
+body {
+    overflow-x: hidden;
+}
 /* ----------------------------------------          header          ---------------------------------------- */
 .header-image-wrapper img {
     display: none;
@@ -216,11 +219,18 @@ html[dir=ltr] .search form {
     max-width: none;
     width: fit-content;
 }
+.post-outer{
+    display:flex;
+}
 .post-content {
     max-width: 640px;
+    margin:0 72px 0 0;
 }
 .post-outer .snippet-thumbnail {
-    margin: 0
+    margin: 0;
+    width:256px;
+    height:256px;
+
 }
 .post-snippet .snippet-fade {
     background: none;
@@ -682,7 +692,6 @@ body.archive-view .sidebar-container {
     margin: 0 -12px 0 12px;
 }
 body.feed-view .blog-pager {
-    display: flex !important;
     color: var(--colorThemes) !important;
 }
 body.feed-view .showpageOf {
@@ -690,21 +699,18 @@ body.feed-view .showpageOf {
 }
 body.feed-view .blog-pager span {
     margin: 4px !important;
-    outline: 1px solid var(--colorThemes) !important;
-}
-body.feed-view .showpagePoint,
-body.feed-view .showpageNum,
-body.feed-view .showpage{
-    text-align: center !important;
-    min-width: 36px !important;
 }
 body.feed-view .showpagePoint,
 body.feed-view .showpageNum a,
 body.feed-view .showpage a {
     font-family: 'Noto Sans JP', 'Material Icons' !important;
+    display: inline-block !important;
     font-size: 16px !important;
     font-weight: bold !important;
     line-height: 36px !important;
+    width: 36px !important; 
+    outline: 1px solid var(--colorThemes) !important;
+    text-align: center !important;
 }
 body.feed-view .showpagePoint{
     color: #FFFFFF !important;
@@ -758,11 +764,18 @@ body.feed-view .showpagePoint{
     .centered-top-placeholder .Header .replaced h1:after {
         font-size: 3.6vw;
     }
+    .post-outer{
+        display:block;
+    }
+    .post-outer .snippet-thumbnail {
+        width:100%;
+        height:calc((100vw - 48px) * 2 / 3);
+    }
     .FeaturedPost h3,
     body.feed-view .blog-posts,
     body.feed-view .feed-message {
         margin-left: 12px;
-        margin-right: 12px
+        margin-right: 12px;
     }
     .main_header_elements {
         position: static;
