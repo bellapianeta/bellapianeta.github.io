@@ -822,7 +822,7 @@ body.archive-view .blog-pager {
     }
     body.item-view .Blog .post-body img {
         width: 100vw;
-        margin: 0 0 0 -24px;
+        margin: 0 0 0 -24px !important;
     }
     .blog-pager .home-link,
     .blog-pager .blog-pager-newer-link,
@@ -1089,7 +1089,7 @@ body.archive-view .blog-pager {
         padding: 12px 0 0;
         max-width: calc(100vw - 48px);
         display: flex;
-        flex-flow: wrap;
+        flex-flow: column;
         justify-content: center;
         align-items: center;
     }
@@ -1100,9 +1100,9 @@ body.archive-view .blog-pager {
         flex: 1 1 auto;
     }
     body.item-view .Blog .post-body img {
-        width: auto;
-        height: 60dvh;
-        margin: 4dvh;
+        width: auto !important;
+        height: 60dvh !important;
+        margin: 4dvh !important;
         flex: 1 1 auto;
     }
     body.search-view:has(.search-focused) .post-filter-message,
