@@ -1061,6 +1061,7 @@ flex: 1 1 auto;
         word-break: keep-all;
         font-size: 8dvh;
         width: auto;
+        height: calc(100dvh - 144px);
         margin: 0;
         padding: 72px 0 72px 12px;
     }
