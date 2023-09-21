@@ -656,6 +656,7 @@ body.archive-view .sidebar-container {
     align-items: center;
     outline: 1px solid var(--colorThemes);
     margin: 4px !important;
+    border-radius: 0;
 }
 .blog-pager .home-link {
     order: 1;
