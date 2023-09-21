@@ -427,9 +427,15 @@ body.item-view .sidebar-container {
     top: 336px;
 }
 /* ----------------------------------------          filter          ---------------------------------------- */
-body.search-view:has(.search-focused),
-body.label-view,
-body.archive-view {
+body.search-view:has(.search-focused):before,
+body.label-view:before,
+body.archive-view:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 96px;
     background: var(--colorThemes);
 }
 body.search-view:has(.search-focused) .main_header_elements,
