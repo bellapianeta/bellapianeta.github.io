@@ -685,7 +685,7 @@ body.archive-view .sidebar-container {
     font-size: 24px;
     margin: 0 -12px 0 12px;
 }
-/* body.feed-view .blog-pager {
+body.feed-view .blog-pager {
     color: var(--colorThemes) !important;
 }
 body.feed-view .showpageOf {
@@ -710,7 +710,7 @@ body.feed-view .showpagePoint {
     color: #FFFFFF !important;
     background: var(--colorThemes) !important;
 }
-body.archive-view .blog-pager {
+/* body.archive-view .blog-pager {
     display: none;
 } */
 /* ----------------------------------------          1619          ---------------------------------------- */
