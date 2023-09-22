@@ -345,7 +345,8 @@ body.item-view:before{
 body.item-view .header-image-wrapper {
     display: none !important;
 }
-body.item-view .centered-top-container:not(.sticky) .centered-top .svg-icon-24 {
+body.item-view .centered-top-container:not(.sticky) .centered-top .svg-icon-24,
+body.item-view .centered-top-placeholder .centered-top .svg-icon-24 {
     fill: #FFFFFF;
 }
 body.item-view .centered-top-container {
@@ -996,7 +997,7 @@ body.feed-view .showpagePoint {
         top: 0;
         right: 0;
         left: auto;
-        width: 288px;
+        width: 96px;
         height: 100vh;
         background: var(--colorThemes);
     }
@@ -1004,6 +1005,9 @@ body.feed-view .showpagePoint {
         flex-direction: row-reverse;
         overflow-x: auto !important;
         overflow-y: hidden !important;
+    }
+    body.item-view .centered-top-placeholder{
+        z-index: 1;
     }
     body.item-view .centered-top-container:not(.sticky) .Header .replaced,
     body.item-view .centered-top-placeholder .Header .replaced {
@@ -1016,7 +1020,7 @@ body.feed-view .showpagePoint {
         justify-content: center;
         width: 192px;
     }
-    .centered-top-container.sticky {
+    body.item-view .centered-top-container.sticky {
         display:none
     }
     body.item-view .blog-name .widget.Header p {
@@ -1025,7 +1029,7 @@ body.feed-view .showpagePoint {
     }
     body.item-view .search {
         position: fixed;
-        bottom: 0;
+        top: calc(100dvh - 72px);
         right: 0;
     }
     body.item-view .search-expand {
@@ -1035,7 +1039,8 @@ body.feed-view .showpagePoint {
         position: absolute;
         margin: 12px 12px 0 0;
     }
-    body.item-view .centered-top-container .search:before {
+    body.item-view .centered-top-container .search:before,
+    body.item-view .centered-top-placeholder .search:before {
         content: '';
         position: fixed;
         top: 72px;
@@ -1045,11 +1050,11 @@ body.feed-view .showpagePoint {
     }
     body.item-view .centered-top-container .search,
     body.item-view .centered-top-container .search:before,
-    body.item-view .centered-top-container .hamburger-section {
+    body.item-view .centered-top-container .hamburger-section,
+    body.item-view .centered-top-placeholder .search,
+    body.item-view .centered-top-placeholder .search:before,
+    body.item-view .centered-top-placeholder .hamburger-section {
         background: var(--colorThemes);
-    }
-    .centered-top-container.sticky {
-        display:none
     }
     body.item-view .hamburger-section {
         margin: 0;
