@@ -997,7 +997,7 @@ body.feed-view .showpagePoint {
         right: 0;
         left: auto;
         width: 288px;
-        height: 100dvh;
+        height: 100vh;
         background: var(--colorThemes);
     }
     body.item-view .all-container {
