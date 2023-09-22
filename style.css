@@ -117,6 +117,7 @@ body {
     max-width: 480px;
     margin: -60px 12px 0;
     padding: 12px;
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     background: rgba(255 255 255 / 50%);
     border-radius: 36px;
@@ -135,6 +136,7 @@ html[dir=ltr] .search form {
     color: rgba(0, 0, 0, 0.4);
 }
 .centered-top-container.sticky {
+    -webkit-backdrop-filter: blur(12px) contrast(25%) brightness(175%);
     backdrop-filter: blur(12px) contrast(25%) brightness(175%);
     height: 72px;
 }
@@ -199,6 +201,9 @@ html[dir=ltr] .search form {
 }
 .post-outer {
     display: flex;
+}
+body.feed-view .post-outer-container {
+    margin: 96px 0 0;
 }
 .post-content {
     max-width: 640px;
@@ -310,6 +315,13 @@ body.sidebar-visible .sidebar-container {
     z-index: 1000;
     box-shadow: 0 0 48px 0 rgba(0, 0, 0, .25);
 }
+.sidebar-container .widget.Profile .team .profile-link .profile-name:after {
+    display: none; 
+}
+.sidebar-container .widget.Profile * {
+    pointer-events: none;
+    cursor: default;
+}
 /* ----------------------------------------          footer          ---------------------------------------- */
 #footer {
     padding: 96px 0 48px;
@@ -369,6 +381,7 @@ body.item-view .centered-top-placeholder .Header .replaced h1:after {
 }
 body.item-view .centered-top-container:not(.sticky) .search.focused .section {
     background: none;
+    -webkit-backdrop-filter: saturate(200%) brightness(50%) blur(4px);
     backdrop-filter: saturate(200%) brightness(50%) blur(4px);
 }
 body.item-view .centered-top-container:not(.sticky) .search input {
@@ -520,6 +533,7 @@ body.search-view:has(.search-focused) .centered-top-container:not(.sticky) .sear
 body.label-view .centered-top-container:not(.sticky) .search.focused .section,
 body.archive-view .centered-top-container:not(.sticky) .search.focused .section {
     background: none;
+    -webkit-backdrop-filter: saturate(200%) brightness(50%) blur(4px);
     backdrop-filter: saturate(200%) brightness(50%) blur(4px);
 }
 body.search-view:has(.search-focused) .centered-top-container:not(.sticky) .search input,
@@ -783,8 +797,7 @@ body.feed-view .showpagePoint {
     .FeaturedPost h3,
     body.feed-view .blog-posts,
     body.feed-view .feed-message {
-        margin-left: 12px;
-        margin-right: 12px;
+        margin: 0 12px;
     }
     .main_header_elements {
         position: static;
@@ -890,7 +903,7 @@ body.feed-view .showpagePoint {
     }
 }
 /* ----------------------------------------          968land          ---------------------------------------- */
-@media screen and (max-width: 968px) and (orientation: landscape) {
+@media screen and (max-width: 968px) and (min-aspect-ratio: 8/5) and (orientation: landscape) {
     .header-image-wrapper {
         height: var(--headerHeightD);
         background-size: auto var(--headerHeightD);
@@ -905,6 +918,7 @@ body.feed-view .showpagePoint {
     .centered-top-placeholder .Header .replaced h1 {
         padding: 0 0 0 4vw;
         pointer-events: auto;
+        line-height: .5;
     }
     .centered-top-container:not(.sticky) .widget.Header .header-widget p:first-of-type,
     .centered-top-placeholder .widget.Header .header-widget p:first-of-type {
@@ -1194,7 +1208,7 @@ body.feed-view .showpagePoint {
         margin: 0 auto;
     }
 }
-@media screen and (max-width: 968px) and (min-aspect-ratio: 3/5) and (orientation: portrait) {
+@media screen and (max-width: 968px) and (min-aspect-ratio: 5/8) and (orientation: portrait) {
     .header-image-wrapper {
         height: var(--headerHeightT);
         background-size: auto var(--headerHeightT);
@@ -1233,6 +1247,11 @@ body.feed-view .showpagePoint {
         width: 36vw;
         height: 36vw;
     }
+    .FeaturedPost h3,
+    body.feed-view .blog-posts,
+    body.feed-view .feed-message {
+        margin: 0 48px;
+    }
     body.item-view .Blog .post-title-container {
         padding: 8vh 0;
     }
@@ -1250,5 +1269,61 @@ body.feed-view .showpagePoint {
     body.label-view .post-filter-description,
     body.archive-view .post-filter-description {
         margin: -4rem 0 0;
+    }
+}
+@media screen and (max-width: 968px) and (max-aspect-ratio: 8/5) and (orientation: landscape) {
+    .header-image-wrapper {
+        height: var(--headerHeightD);
+        background-size: auto var(--headerHeightD);
+        background-position: initial;
+    }
+    .centered-top-container:not(.sticky) .Header .replaced,
+    .centered-top-placeholder .Header .replaced {
+        height: var(--headerHeightD);
+        width: 100vw;
+    }
+    .centered-top-container:not(.sticky) .Header .replaced h1,
+    .centered-top-placeholder .Header .replaced h1 {
+        padding: 0 0 0 4vw;
+        pointer-events: auto;
+        line-height: .5;
+    }
+    .centered-top-container:not(.sticky) .widget.Header .header-widget p:first-of-type,
+    .centered-top-placeholder .widget.Header .header-widget p:first-of-type {
+        font-size: 3.6dvh;
+    }
+    .centered-top-container:not(.sticky) .widget.Header .header-widget p:last-of-type,
+    .centered-top-placeholder .widget.Header .header-widget p:last-of-type {
+        font-size: 4.8dvh;
+    }
+    .centered-top-container:not(.sticky) .Header .replaced h1:after,
+    .centered-top-placeholder .Header .replaced h1:after {
+        font-size: 2.4dvh;
+    }
+    .post-outer {
+        display: flex;
+    }
+    body.feed-view .post-outer-container {
+        margin: 48px 0 0;
+    }
+    .post-title,
+    .post-title a {
+        font-size: 36px;
+    }
+    .popular-posts-snippet.snippet-container,
+    .post-snippet.snippet-container {
+        max-height: none;
+    }
+    .post-snippet .snippet-item {
+        -webkit-line-clamp: 2;
+    }
+    .post-outer .snippet-thumbnail {
+        width: 36dvh;
+        height: 36dvh;
+    }
+    .FeaturedPost h3,
+    body.feed-view .blog-posts,
+    body.feed-view .feed-message {
+        margin: 0 24px;
     }
 }
