@@ -459,6 +459,11 @@ body.archive-view:before {
     height: 96px;
     background: var(--colorThemes);
 }
+body.search-view:has(.search-focused) .centered-top-placeholder .centered-top .svg-icon-24,
+body.label-view .centered-top-placeholder .centered-top .svg-icon-24,
+body.archive-view .centered-top-placeholder .centered-top .svg-icon-24{
+    fill: #FFFFFF;
+}
 body.search-view:has(.search-focused) .main_header_elements,
 body.search-view:has(.search-focused) label_header_elements,
 body.archive-view label_header_elements {
@@ -531,20 +536,29 @@ body.archive-view .centered-top-placeholder .Header .replaced h1:after {
     content: none !important;
 }
 body.search-view:has(.search-focused) .centered-top-container:not(.sticky) .search.focused .section,
+body.search-view:has(.search-focused) .centered-top-placeholder .search.focused .section,
 body.label-view .centered-top-container:not(.sticky) .search.focused .section,
-body.archive-view .centered-top-container:not(.sticky) .search.focused .section {
+body.label-view .centered-top-placeholder .search.focused .section,
+body.archive-view .centered-top-container:not(.sticky) .search.focused .section,
+body.archive-view .centered-top-placeholder .search.focused .section {
     background: none;
     -webkit-backdrop-filter: saturate(200%) brightness(50%) blur(4px);
     backdrop-filter: saturate(200%) brightness(50%) blur(4px);
 }
 body.search-view:has(.search-focused) .centered-top-container:not(.sticky) .search input,
+body.search-view:has(.search-focused) .centered-top-placeholder .search input,
 body.label-view .centered-top-container:not(.sticky) .search input,
-body.archive-view .centered-top-container:not(.sticky) .search input {
+body.label-view .centered-top-placeholder .search input,
+body.archive-view .centered-top-container:not(.sticky) .search input,
+body.archive-view .centered-top-placeholder .search input {
     color: #FFFFFF;
 }
 body.search-view:has(.search-focused) .centered-top-container:not(.sticky) .search input::placeholder,
+body.search-view:has(.search-focused) .centered-top-placeholder .search input::placeholder,
 body.label-view .centered-top-container:not(.sticky) .search input::placeholder,
-body.archive-view .centered-top-container:not(.sticky) .search input::placeholder {
+body.label-view .centered-top-placeholder .search input::placeholder,
+body.archive-view .centered-top-container:not(.sticky) .search input::placeholder,
+body.archive-view .centered-top-placeholder .search input::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
 body.search-view:has(.search-focused) .main_content_container,
