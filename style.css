@@ -1005,6 +1005,14 @@ body.feed-view .showpagePoint {
     margin: 4dvh !important;
     flex: 1 1 auto;
     } */
+    html:has(.item-view) {
+        overscroll-behavior: none;
+    }
+    body.item-view{
+        width:auto;
+        height: 100dvh;
+        overflow: hidden;
+    }
     body.item-view:before{
         content: "";
         position: absolute;
@@ -1020,9 +1028,6 @@ body.feed-view .showpagePoint {
         height: 100dvh;
         overflow-x: auto !important;
         overflow-y: hidden !important;
-        overscroll-behavior: none;
-    }
-    html {
         overscroll-behavior: none;
     }
     body.item-view .centered-top-placeholder{
