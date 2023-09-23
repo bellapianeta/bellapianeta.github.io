@@ -1022,6 +1022,9 @@ body.feed-view .showpagePoint {
         overflow-y: hidden !important;
         overscroll-behavior: none;
     }
+    html {
+        overscroll-behavior: none;
+    }
     body.item-view .centered-top-placeholder{
         z-index: 1;
     }
