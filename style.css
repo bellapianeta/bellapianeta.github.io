@@ -1008,7 +1008,7 @@ body.feed-view .showpagePoint {
     html:has(.item-view) {
         overscroll-behavior: none;
         width:auto;
-        height: 100dvh;
+        height: 100svh;
         overflow: hidden;
     }
     body.item-view:before{
@@ -1018,12 +1018,12 @@ body.feed-view .showpagePoint {
         right: 0;
         left: auto;
         width: 96px;
-        height: 100dvh;
+        height: 100svh;
         background: var(--colorThemes);
     }
     body.item-view .all-container {
         flex-direction: row-reverse;
-        height: 100dvh;
+        height: 100svh;
         overflow-x: auto !important;
         overflow-y: hidden !important;
         overscroll-behavior: none;
@@ -1052,7 +1052,7 @@ body.feed-view .showpagePoint {
     }
     body.item-view .search {
         position: fixed;
-        top: calc(100dvh - 72px);
+        top: calc(100svh - 72px);
         right: 0;
     }
     body.item-view .search-expand {
@@ -1069,7 +1069,7 @@ body.feed-view .showpagePoint {
         top: 72px;
         right: 0;
         width: 72px;
-        height: calc(100dvh - 144px);
+        height: calc(100svh - 144px);
     }
     body.item-view .centered-top-container .search,
     body.item-view .centered-top-container .search:before,
@@ -1099,7 +1099,7 @@ body.feed-view .showpagePoint {
     body.item-view .Blog {
         flex-direction: row-reverse;
         width: auto !important;
-        height: 100dvh;
+        height: 100svh;
     }
     body.item-view .Blog .post-title-container {
         display: flex;
@@ -1107,7 +1107,7 @@ body.feed-view .showpagePoint {
         align-items: center;
         min-width: 216px;
         width: 192px;
-        height: 100dvh;
+        height: 100svh;
         padding: 0 0 0 24px;
     }
     body.item-view .Blog .post-title,
@@ -1119,7 +1119,7 @@ body.feed-view .showpagePoint {
         word-break: keep-all;
         font-size: 8dvh;
         width: auto;
-        height: calc(100dvh - 144px);
+        height: calc(100svh - 144px);
         margin: 0;
         padding: 72px 0 72px 12px;
     }
@@ -1127,7 +1127,7 @@ body.feed-view .showpagePoint {
         display: flex;
         justify-content: center;
         align-items: end;
-        height: 100dvh;
+        height: 100svh;
     }
     body.item-view .Blog .post-header>* {
         top: auto;
@@ -1157,7 +1157,7 @@ body.feed-view .showpagePoint {
         flex-direction: column;
         padding: 0 48px 0;
         max-width: none;
-        height: calc(100dvh - 72px);
+        height: calc(100svh - 72px);
         font-size: 1rem;
         line-height: 2.4rem;
         overflow-wrap: break-word;
@@ -1167,7 +1167,7 @@ body.feed-view .showpagePoint {
         max-width: none !important;
         margin: 0 24px !important;
         width: auto !important;
-        height: calc(100dvh - 72px) !important;
+        height: calc(100svh - 72px) !important;
     }
     body.item-view .post-bottom {
         display: none;
@@ -1177,7 +1177,7 @@ body.feed-view .showpagePoint {
         margin: 0;
         float: none;
         width: 192px;
-        height: 100dvh;
+        height: 100svh;
         display: flex;
         flex-direction: column;
         justify-content: center;
