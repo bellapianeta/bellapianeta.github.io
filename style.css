@@ -1007,8 +1007,6 @@ body.feed-view .showpagePoint {
     } */
     html:has(.item-view) {
         overscroll-behavior: none;
-    }
-    body.item-view{
         width:auto;
         height: 100dvh;
         overflow: hidden;
