@@ -1012,11 +1012,12 @@ body.feed-view .showpagePoint {
         right: 0;
         left: auto;
         width: 96px;
-        height: 100vh;
+        height: 100dvh;
         background: var(--colorThemes);
     }
     body.item-view .all-container {
         flex-direction: row-reverse;
+        height: 100dvh;
         overflow-x: auto !important;
         overflow-y: hidden !important;
     }
@@ -1028,6 +1029,7 @@ body.feed-view .showpagePoint {
         top: 0;
         right: 72px;
         width: auto;
+        z-index: -1;
     }
     body.item-view .centered-top-container:not(.sticky) .Header .replaced h1,
     body.item-view .centered-top-placeholder .Header .replaced h1 {
@@ -1233,7 +1235,7 @@ body.feed-view .showpagePoint {
         margin: 0 auto;
     }
 }
-@media screen and (max-width: 968px) and (min-aspect-ratio: 6/8) and (orientation: portrait) {
+@media screen and (max-width: 968px) and (min-aspect-ratio: 5.5/8) and (orientation: portrait) {
     .header-image-wrapper {
         height: var(--headerHeightT);
         background-size: auto var(--headerHeightT);
@@ -1296,7 +1298,7 @@ body.feed-view .showpagePoint {
         margin: -4rem 0 0;
     }
 }
-@media screen and (max-width: 968px) and (max-aspect-ratio: 8/6) and (orientation: landscape) {
+@media screen and (max-width: 968px) and (max-aspect-ratio: 8/5.5) and (orientation: landscape) {
     .header-image-wrapper {
         height: var(--headerHeightD);
         background-size: auto var(--headerHeightD);
